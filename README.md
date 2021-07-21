@@ -16,12 +16,12 @@ watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channe
 To read - https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags
 
 Execute the bellow code and write your description in txt file
-        typeof(1)      "number"
-        typeof(1.1)    "number" 
-        typeof('1.1')  "string"
-        typeof(true)  "boolean"
-        typeof(null)  "object"
-        typeof(undefined) "undefined"
-        typeof([])      "object"
-        typeof({})      "object"
-        typeof(NaN)     "number"
+        typeof(1)    -  "number"
+        typeof(1.1)  -  "number" 
+        typeof('1.1') - "string"
+        typeof(true) - "boolean"
+        typeof(null) - "object"
+        typeof(undefined) - "undefined"
+        typeof([])   -   "object"
+        typeof({})   -   "object"
+        typeof(NaN)  -   "number"
