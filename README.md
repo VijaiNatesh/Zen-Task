@@ -1,4 +1,4 @@
-# Zen-Task
+# Zen-Task 1
 List 5 difference between Browser JS(console) v Nodejs
 1) Javascript is a programming language that is used for writing scripts on the website / NodeJS is a Javascript runtime environment.  
 2) Javascript can only be run in the browsers /	NodeJS code can be run outside the browser.
@@ -25,3 +25,20 @@ Execute the bellow code and write your description in txt file
         typeof([])   -   "object"
         typeof({})   -   "object"
         typeof(NaN)  -   "number"
+        
+        # Zen-Task 2
+        var obj = [
+    { person: "Name 1", age: "2", company: "GUVI" },
+    { person: "Name 2", age: "5", company: "GUVI geek" },
+    { person: "Name 3", age: "8", company: "GUVI geek network" },
+  ];
+  var text = "";
+  for(var i = 0; i < obj.length; i++){
+       text = text + obj[i].person + " " + obj[i].age + " " + obj[i].company ;
+      
+  }
+  for (let x in obj){
+      text += obj[x].person + " " + obj[x].age + " " + obj[x].company;
+      //console.log(text);
+  }
+  
