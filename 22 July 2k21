@@ -40,3 +40,22 @@ var obj2 = { age:5, name: "Person 1" };
       console.log(martialStatus);
       console.log(country);
       console.log(age);
+    5) Declare variables and assign string, boolean, undefined and null data types
+         var firstName = "Vijay"; var x  = true; var y; var z = null;
+         console.log(typeof(firstName)); console.log(typeof(x)); console.log(typeof(y)); console.log(typeof(z));
+    6) Convert the string to integer
+         var x = "4"; x = +x;
+         console.log(typeof(x));
+         var y = '6'; y = Number(y);
+         console.log(typeof(y));
+         var z = "3"; ++z;
+         console.log(typeof(z));
+    7) Write 6 statement which provide truthy & falsey values.
+      var x = Boolean (10 < 9); console.log(x);
+      let y = 1; console.log(Boolean(y));
+      var z = "@@"; console.log(Boolean(z));
+      var r ; console.log(Boolean(r));
+      var k = Boolean (1 > 0); console.log(k);
+      var d = true; console.log(Boolean(d));
+         
+         
