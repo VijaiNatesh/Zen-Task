@@ -1,1 +1,17 @@
-
+[
+{
+"name" : "Vijayakumar",
+"mail" : "xyz@gmail.com",
+"Phone" : 00000000000,
+"Degree" : "ME"
+},
+{
+"University" : "Anna",
+"Department" : "MECH"
+},
+{
+"Project" : "Composite",
+"Outcome" : "Optimization",
+"YearOfPassing" : 2016
+}
+]
