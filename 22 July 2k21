@@ -57,5 +57,40 @@ var obj2 = { age:5, name: "Person 1" };
       var r ; console.log(Boolean(r));
       var k = Boolean (1 > 0); console.log(k);
       var d = true; console.log(Boolean(d));
-    8) 
+    8) Square of a number - console.log(Math.pow(2,2));
+    9) Swapping 2 numbers - var a = 4; var b = 6; [a,b] = [b,a]; console.log(a,b);
+    10) Addition of 3 numbers - var a = 4; var b = 6; var c = 3; console.log(a+b+c);
+    11) Celsius to Fahrenheit conversion - var a = 1; console.log((a * 1.8) + 32);
+    12) Meter to miles - var a = 8; console.log(a * 0.000621);
+    13) Pounds to kg - var a = 8; console.log(a * 0.45359237);
+    14) Calculate Batting Average - var innings = prompt("No. of. innings Played"); var notOut = prompt("No. of. Notout"); var totalRun = prompt("total runs"); var avg = (totalRun) / (innings - notOut) ; console.log(avg);
+    15) Calculate five test scores and print their average - var totalRun = prompt("total runs"); var avg = (totalRun) / 5 ; console.log(avg);
+    16) Power of any number x ^ y - var x = prompt("Enter x"); var y = prompt("Enter y"); console.log(Math.pow(x,y));
+    17) Calculate Simple Interest 
+            var p = prompt('Principal');
+            var r = prompt('rate');
+            var t = prompt('time in years');
+            var si = p * (r/100) * t ;
+            console.log(si);
+    18) Calculate area of an equilateral triangle
+             var s = prompt('sideLength');
+             var d = (s * s) * (Math.sqrt(3));
+             var a = d / 4 ;
+             console.log(a);
+Area Of Isosceles Triangle
+Volume Of Sphere
+Volume Of Prism
+Find area of a triangle.
+Give the Actual cost and Sold cost, Calculate Discount Of Product
+Given their radius of a circle and find its diameter, circumference and area.
+Given two numbers and perform all arithmetic operations.
+Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+Program To Calculate CGPA
          
