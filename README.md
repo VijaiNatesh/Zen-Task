@@ -35,10 +35,10 @@ Execute the bellow code and write your description in txt file
   var text = "";
   for(var i = 0; i < obj.length; i++){
        text = text + obj[i].person + " " + obj[i].age + " " + obj[i].company ;
-      
+       console.log(text);
   }
   for (let x in obj){
       text += obj[x].person + " " + obj[x].age + " " + obj[x].company;
-      //console.log(text);
+      console.log(text);
   }
   
