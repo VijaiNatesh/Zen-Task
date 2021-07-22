@@ -46,4 +46,33 @@ Tasks - July 21, 2021
   }
   // for each
   obj.forEach(key => console.log(key.person, key.age, key.company));
+//display all the country flags in console
+  var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+    var t = JSON.parse(this.response);
+    for(var i = 0; i < t.length; i++){
+    console.log(t[i].flag);
+    }
+};
+    xhr.onerror = function () {
+        console.log("Error", this.statusText);
+    };
+    xhr.send();   
+//print all countries name, region, sub region and population.
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+    var t = JSON.parse(this.response);
+    for(var i = 0; i < t.length; i++){
+        console.log(t[i].name);
+        console.log(t[i].region);
+        console.log(t[i].subregion);
+        console.log(t[i].population);
+    }
+};
+    xhr.onerror = function () {
+        console.log("Error", this.statusText);
+    };
+    xhr.send();     
 
