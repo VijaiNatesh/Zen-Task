@@ -20,7 +20,7 @@
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
    console.log(JSON.stringify(obj1)===JSON.stringify(obj2));
-3) Simple Programs todo for variables
+3) Simple Programs to do for variables
    1) Declare four variables without assigning values and print them in console
       var a, b, c, d ;
       a = b = c = d = 1 ;
@@ -57,5 +57,5 @@ var obj2 = { age:5, name: "Person 1" };
       var r ; console.log(Boolean(r));
       var k = Boolean (1 > 0); console.log(k);
       var d = true; console.log(Boolean(d));
-         
+    8) 
          
