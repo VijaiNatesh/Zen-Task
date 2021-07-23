@@ -1,26 +1,26 @@
 var techSpec = [
     "dimensions": { 
-        "overAllLength": "3500 mm",
-        "overAllWidth": "1600 mm",
-        "overAllHeight": "1490 mm",
+        "overAlllength": "3500 mm",
+        "overAllwidth": "1600 mm",
+        "overAllheight": "1490 mm",
         "wheelBase": "2360 mm",
         "trackWidth": {
               "front": "1405 mm",
               "rear": "1400 mm"
               },
-        "minimumTurningRadius" : "4.5 m";
-        "minimumGroundClearance": "170 mm"
+        "minimumTurningradius" : "4.5 m";
+        "minimumGroundclearance": "170 mm"
       },
       "capacities":{
         "seatingCapacity": 5,
-        "fuelTankCapacity": "35 lit"
+        "fuelTankcapacity": "35 lit"
         },
         "engine":{
         "type": "KB-Series",
-        "numberOfCylinders" : 3,
-        "numberOfValves": 12,
+        "numberOfcylinders" : 3,
+        "numberOfvalves": 12,
         "capacity": "998 cc/cm ^3",
-        "boreXStroke" : "73.0 x 79.5 mm",
+        "boreXstroke" : "73.0 x 79.5 mm",
         "compressionRatio" : 10.1,
         "maximumPower" : "67/6200 PS/rpm",
         "maximumTorque" : "90/3500 Nm /rpm",
