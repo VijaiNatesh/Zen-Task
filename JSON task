@@ -1,5 +1,5 @@
 var techSpec = [
-    "dimensions": { 
+    "dimensions", { 
         "overAlllength": "3500 mm",
         "overAllwidth": "1600 mm",
         "overAllheight": "1490 mm",
@@ -11,11 +11,11 @@ var techSpec = [
         "minimumTurningradius" : "4.5 m";
         "minimumGroundclearance": "170 mm"
       },
-      "capacities":{
+      "capacities",{
         "seatingCapacity": 5,
         "fuelTankcapacity": "35 lit"
         },
-        "engine":{
+        "engine",{
         "type": "KB-Series",
         "numberOfcylinders" : 3,
         "numberOfvalves": 12,
@@ -26,10 +26,10 @@ var techSpec = [
         "maximumTorque" : "90/3500 Nm /rpm",
         "fuelDistribution": "Multipoint Injection"
         },
-        "transmission": {
+        "transmission", {
           "type": "5-speed MT"
           },
-       "chassis":{
+       "chassis",{
         "steering": "Rack & Pinion, Power assisted",
         "brakes":{
                 "front": "Ventilated discs",
@@ -42,7 +42,7 @@ var techSpec = [
           "shockAbsorbers": "Gas Filled",
           "tyre": "155/ 80R13"
          },
-         "weights":{
+         "weights",{
             "kerbWeight": "860-880 kg",
             "grossVehicleWeight": "1320kg"
           }
