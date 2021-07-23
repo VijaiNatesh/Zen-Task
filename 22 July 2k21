@@ -77,20 +77,61 @@ var obj2 = { age:5, name: "Person 1" };
              var d = (s * s) * (Math.sqrt(3));
              var a = d / 4 ;
              console.log(a);
-Area Of Isosceles Triangle
-Volume Of Sphere
-Volume Of Prism
-Find area of a triangle.
-Give the Actual cost and Sold cost, Calculate Discount Of Product
-Given their radius of a circle and find its diameter, circumference and area.
-Given two numbers and perform all arithmetic operations.
-Display the asterisk pattern as shown below(No loop needed):
-*****
-*****
-*****
-*****
-*****
-Calculate electricity bill?
-For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
-Program To Calculate CGPA
+    19) Area Of Isosceles Triangle
+             var b = prompt('Base');
+             var h = prompt('height');
+             var a = (b * h) / 2 ;
+             console.log(a);
+    20) Volume Of Sphere
+            var r = prompt('radius');
+            var v = (4 * 3.14 * Math.pow(r, 3)) / 3 ;
+            console.log(v);
+    21) Volume Of Prism
+            var a = prompt('base area');
+            var l = prompt('length');
+            var v = a * l;
+            console.log(v);
+    22) Find area of a triangle.
+            var b = prompt('base');
+            var h = prompt('height');
+            var a = 0.5 * b * h;
+            console.log(a);
+    23) Give the Actual cost and Sold cost, Calculate Discount Of Product
+            var a = prompt('actual cost');
+            var s = prompt('sold cost');
+            var d = a - s;
+            console.log("rupees:" + d);
+    24) Given their radius of a circle and find its diameter, circumference and area.
+            var r = prompt('radius');
+            console.log("Diameter:" + (2 *r));
+            console.log("Circumference:" + (2 * r * 3.14));
+            console.log("Area:" + (3.14 * r * r));
+    25) Given two numbers and perform all arithmetic operations.
+            var a = prompt('Enter a number'); var b = prompt('Enter a number');
+            console.log("Add:" + (+a + (+b)));
+            console.log("Sub:" + (a - b));
+            console.log("Multiply:" + (a * b));
+            console.log("Division:" + (a / b));
+    26) Display the asterisk pattern as shown below(No loop needed):
+            *****
+            *****
+            *****
+            *****
+            *****
+            console.log("*****");
+            console.log("*****");
+            console.log("*****");
+            console.log("*****");
+            console.log("*****");
+    27) Calculate electricity bill?
+         For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+            var p = prompt('power');
+            var t = prompt('time in terms of hour per day');
+            var m = prompt('enter period to be considered in terms of day'); var u = prompt('unit rate');
+            console.log("bill Rs per month" + ((p / 1000) * t * m * u));
+    28) Program To Calculate CGPA
+            var p = prompt('Percentage');
+            console.log("CGPA:" + (p / 9.5));
+
+         
          
