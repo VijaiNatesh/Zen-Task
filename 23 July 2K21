@@ -1,0 +1,63 @@
+1) Do the below programs in anonymous function & IIFE
+  a) Print odd numbers in an array
+          var a = [];
+          a = prompt('Enter the elements of the array');
+                   // anonymous function
+          var odd = function ( ){
+              for (let i = 0; i < a.length; i++){
+                  if(a[i] % 2 === 1){
+                      console.log(a[i]);
+                  }
+              }
+          };
+          odd(a);
+          //IIFE
+          (function ( ){
+              for (let i = 0; i < a.length; i++){
+                  if(a[i] % 2 === 1){
+                      console.log(a[i]);
+                  }
+              }
+          } ) (a);
+  b) Convert all the strings to title caps in a string array
+          // anonymous function
+              var titleCaps = function (string){
+              var a = string.toLowerCase().split(" ");
+              for (let i = 0; i < a.length; i++){
+                  a[i] = a[i][0].toUpperCase() + a[i].slice(1);
+              }
+              document.write(a.join(" "));
+              return a;
+              };
+               titleCaps(prompt('enter the string'));
+         // IIFE
+              (function (string){
+              var a = string.toLowerCase().split(" ");
+              for (let i = 0; i < a.length; i++){
+                  a[i] = a[i][0].toUpperCase() + a[i].slice(1);
+              }
+              document.write(a.join(" "));
+              return a;
+              } ) (prompt('enter the string'));
+  c) Sum of all numbers in an array
+            var a = [ ];
+            a = prompt('enter the array values');  
+            var b = a.split(","); 
+            // anonymous function
+            var Sum = function ( ){ let sum = 0;
+                   for(let i = 0; i < b.length; i++){
+                    sum = sum + (+b[i]);
+                   }  console.log(sum);
+            };
+            Sum(b);
+            // IIFE
+            (function ( ){ let sum = 0;
+            for(let i = 0; i < b.length; i++){
+                sum = sum + (+b[i]);
+               }  console.log(sum);
+            }) (b);
+  Return all the prime numbers in an array
+  Return all the palindromes in an array
+  Return median of two sorted arrays of same size
+  Remove duplicates from an array
+
