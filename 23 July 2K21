@@ -86,6 +86,27 @@
                         }
                     } 
                 })(b);
-  Return median of two sorted arrays of same size
+  f) Return median of two sorted arrays of same size
+        var a = [];
+        a = prompt('enter the array values');
+        var b = a.split(",");
+        var c = [];
+        c = prompt('enter the array values');
+        var d = c.split(",");
+        // anonymous function
+        var median = function (v1, v2) {
+            let g = [...b,...d];
+            g.sort(function(a, b){return a-b});
+            let res = (+g[(g.length) / 2]) + (+g[((g.length) / 2) - 1]);
+            console.log(res);
+        };
+        median(b,d);
+        //IIFE
+        (function (v1, v2) {
+            let g = [...b,...d];
+            g.sort(function(a, b){return a-b});
+            let res = (+g[(g.length) / 2]) + (+g[((g.length) / 2) - 1]);
+            console.log(res);
+        })(b,d);
   Remove duplicates from an array
 
