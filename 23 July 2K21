@@ -56,8 +56,36 @@
                 sum = sum + (+b[i]);
                }  console.log(sum);
             }) (b);
-  Return all the prime numbers in an array
-  Return all the palindromes in an array
+  d) Return all the prime numbers in an array
+  e) Return all the palindromes in an array
+        var a = [];
+            a = prompt('enter the array values');
+            var b = a.split(" ");
+            // anonymous function
+            var palindrome = function () {
+                for (let i = 0; i < b.length; i++) {
+                let len = b[i].length;
+                let start = b[i].substring(0, Math.floor(len /2)).toLowerCase();
+                let end = b[i].substring(len - (Math.floor(len / 2))).toLowerCase();
+                let flip = end.split("").reverse().join("");
+                     if (start === flip){
+                    console.log(b[i]);
+                    }
+                } 
+            };
+            palindrome(b);
+            // IIFE
+            (function () {
+                for (let i = 0; i < b.length; i++) {
+                    let len = b[i].length;
+                    let start = b[i].substring(0, Math.floor(len /2)).toLowerCase();
+                    let end = b[i].substring(len - (Math.floor(len / 2))).toLowerCase();
+                    let flip = end.split("").reverse().join("");
+                         if (start === flip){
+                        console.log(b[i]);
+                        }
+                    } 
+                })(b);
   Return median of two sorted arrays of same size
   Remove duplicates from an array
 
