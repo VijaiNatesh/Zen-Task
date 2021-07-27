@@ -108,7 +108,28 @@
             let res = (+g[(g.length) / 2]) + (+g[((g.length) / 2) - 1]);
             console.log(res);
         })(b,d);
-  Remove duplicates from an array
+  g) Remove duplicates from an array
+              var a = [];
+            a = prompt('enter the array values');
+            // Anonymous function
+            var removed = function( ){
+              let set = new Set();
+              let b = a.split(" ");
+              b.forEach(element => {
+                set.add(element);
+              });
+              console.log(set);
+            }
+            removed(a);
+            // IIFE
+            (function( ){
+              let set = new Set();
+              let b = a.split(" ");
+              b.forEach(element => {
+                set.add(element);
+              });
+              console.log(set);
+            })(a);
   Rotate an array by k times
   https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
   Do the below programs in arrow functions
