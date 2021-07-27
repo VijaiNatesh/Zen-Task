@@ -130,7 +130,35 @@
               });
               console.log(set);
             })(a);
-  Rotate an array by k times
+  f) Rotate an array by k times
+                var a = [];
+          a = prompt('enter the array values');
+          var k = prompt('enter the number of rotation');
+          var b = a.split(" ");
+          const revb = (b, start, end) => {
+            while(start < end){
+              [b[start], b[end]] = [b[end], b[start]];
+              start++;
+              end--;
+            }
+          }
+          // Anonymous function
+          var rotate = function( ){
+            k = k % b.length; console.log(k);
+            b.reverse(b);
+            revb(b, 0, k-1);
+            revb(b, k, (b.length) -1); 
+           console.log(b);
+          }
+          rotate(b,k);
+          // IIFE
+          (function( ){
+            k = k % b.length; console.log(k);
+            b.reverse(b);
+            revb(b, 0, k-1);
+            revb(b, k, (b.length) -1); 
+           console.log(b);
+          })(b,k);
   https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
   Do the below programs in arrow functions
   Print odd numbers in an array
