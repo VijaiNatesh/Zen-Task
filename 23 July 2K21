@@ -57,6 +57,16 @@
                }  console.log(sum);
             }) (b);
   d) Return all the prime numbers in an array
+          var a = [];
+          a = prompt('enter the array values greater than one');
+          var b = a.split(" ");
+          var res = b.filter((number) => {
+            for (var i = 2; i <= Math.sqrt(number); i++) {
+              if (number % i === 0) return false;
+            }
+            return true;
+          });
+          console.log(res);
   e) Return all the palindromes in an array
         var a = [];
             a = prompt('enter the array values');
