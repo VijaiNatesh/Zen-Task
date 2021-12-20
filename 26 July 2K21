@@ -66,4 +66,187 @@ https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-
           let a = prompt("First number?");
           let b = prompt("Second number?");
           alert((+a) + (+b));
-      7) 
+      7)    <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            var a = "2" > "12";
+            //Don't touch below this
+            if (a) {
+              console.log("Code is Blasted")
+            }
+            else
+            {
+              console.log("Diffused") 
+            }
+            Explanation: In script section, a is assigned with the condition of 2 > 12 and it is executed in the if else block. If variable a matches the condition if block will be executed (i.e.) "Code is Blasted". To diffuse it, a should be 2 < 12.
+      8) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let a = prompt("Enter a number?");
+            a = parseInt(a);
+            //Don't modify any code below this
+            if (a) {
+             console.log( 'OMG it works for any number inc 0' );
+            }
+            else
+            {
+             console.log( "Success" );
+            }
+            Explanation: To get Success in console, declare the variable a as interger and if prompt value is not a number then else block of Success will be executed.
+      9) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let value = prompt('How many runs you scored in this ball');
+                value = parseInt(value)
+            if (value === 4) {
+                  console.log("You hit a Four");
+            } else if (value === 6) {
+                  console.log("You hit a Six");
+            } else {
+                  console.log("I couldn't figure out");
+            }
+     10) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let login = 'Employee';
+            let message = (login == 'Employee') ? 'Welcome to the Employee' :
+              (login == 'Director') ? 'Greetings' :
+              (login == '') ? 'No login' :
+              '';
+            console.log(message);
+     11) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            // You cant change the value of the msg
+            let message;
+            if (null || 2 || undefined )
+            {
+             message = "welcome boss";
+            }
+            else
+            {
+              message = "Go away";
+            }
+              console.log(message);
+      12) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let message;
+            let lock;
+            //Dont change any code below this 
+            if (null || lock || undefined )
+            {
+              message = "Go away";
+            }
+            else
+            {
+             message = "welcome";
+            }
+              console.log(message);
+     13) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let message;
+            let lock ;
+            //Dont change any code below this
+            if (lock && " " || undefined )
+            {
+              message = "Go away";
+            }
+            else
+            {
+             message = "welcome";
+            }
+            console.log(message);
+      14) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            //You can change only 2 characters
+            let i = 3;
+            while (i) {
+              console.log( i );
+              --i;
+            }
+      15) 
+      16) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            //You are allowed to modify only one character 
+            for (let num = 2; num <= 20; num += 1) {
+              if(num % 2 === 0){
+                  console.log(num)
+             }
+            }
+      17) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let gifts = ["teddy bear", "drone", "doll"];
+            for (let i = 0; i < 3; i++) {
+              console.log(`Wrapped ${gifts[i]} and added a bow!`);
+            }
+     18) <!DOCTYPE html>
+            <html>
+            <body>
+             <script src=”script.js”></script>
+            </body>
+            </html>
+            script.js
+            let countdown = 100;
+            while (countdown > 0) {
+              countdown++;
+              if(countdown == 0)
+              {
+               console.log("bomb triggered");
+              }
+            }
+    19) var lemein = “0”;
+            var lemeout = 0;
+            var msg = “”;
+            if (lemein) {
+             msg += “hi”;
+             }
+            if (lemeout) {
+             msg += ‘Hello’;
+            }
+            console.log(msg)
+            Explanation: the output is Hi. Because, lemein is assigned as string and it is available while going through if else statement whereas lemeout is assigned as number and it is assignes to zero.
