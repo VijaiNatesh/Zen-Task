@@ -1,1 +1,69 @@
-
+https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-them-9ee6c67c44fb
+      1) <!DOCTYPE html>
+          <html>
+          <body>
+           <script>
+           //alert( "I’m JavaScript!'); 
+           alert( "I’m JavaScript!");
+           </script>
+           Whats the error in this ?
+          </body>
+          </html>
+      2) <!DOCTYPE html>
+          <html>
+          <body>
+           <script src=”script.js”></script>
+          </body>
+          </html>
+          scripts.js  --------- script.js
+          alert(“I’m invoked!”);
+      3) <!DOCTYPE html>
+          <html>
+          <body>
+           <script src=”script.js”></script>
+          </body>
+          </html>
+          script.js
+          alert("I'm JavaScript!");
+          alert('Hello') // this line is not having semicolon
+          alert(`Wor
+           ld`)
+          alert(3 +
+          1
+          + 2); // this is multiple line code and its working
+          Explanation: HTML reads the external script file and execute the javascript part in it. Javascript ignores the semicolon and wrap the conditions inside brackets irrespective of number of lines.
+      4) <!DOCTYPE html>
+          <html>
+          <body>
+           <script src=”script.js”></script>
+          </body>
+          </html>
+          script.js
+          let admin=9, fname=10.5; 
+          fname = "Guvi";
+          lname = "geek"
+          admin = fname + " " + lname;
+          alert( admin ); // "Guvi geek"
+      5) <!DOCTYPE html>
+          <html>
+          <body>
+           <script src=”script.js”></script>
+          </body>
+          </html>
+          script.js
+          let fname=10.5; 
+          fname = "Guvi";
+          lname = "geek"
+          let name = fname+ " " +lname;
+          alert( `hello ${name}` );
+      6) <!DOCTYPE html>
+          <html>
+          <body>
+           <script src=”script.js”></script>
+          </body>
+          </html>
+          script.js
+          let a = prompt("First number?");
+          let b = prompt("Second number?");
+          alert((+a) + (+b));
+      7) 
