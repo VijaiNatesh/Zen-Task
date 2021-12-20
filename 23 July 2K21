@@ -525,10 +525,36 @@
                                                           }
 
  Do the below programs in arrow functions
-  Print odd numbers in an array
-  Convert all the strings to title caps in a string array
-  Sum of all numbers in an array
-  Return all the prime numbers in an array
-  Return all the palindromes in an array
-
+  1) Print odd numbers in an array
+    var a = [2,4,5,6,7];
+         const odd = a.filter((x) => {
+             if(+x % 2 === 1){
+                return x;
+             }
+         })
+         console.log(odd)
+  2) Convert all the strings to title caps in a string array
+    var a = ["vijay"];
+    var b = a[0].split("");
+    const titleCase = b.map((x) => {
+        return x.toUpperCase()
+    })
+    console.log(titleCase.join(""))
+   3) Sum of all numbers in an array
+    var a = [1, 2, 3, 4];
+    const sum = a.reduce((a, b) => a + b , 0)
+    console.log(sum)
+   4) Return all the prime numbers in an array
+           var a = [2,3,5,7,9,10,13];
+          var res = a.filter((number) => {
+            for (var i = 2; i <= Math.sqrt(number); i++) {
+              if (number % i === 0) return false;
+            }
+            return true;
+          });
+          console.log(res);
+  5) Return all the palindromes in an array
+    const getAllPalindromes = (words) => words.filter((word) => word.split("").reverse().join("") === word);
+    console.log(getAllPalindromes(["hello", "noon"]));
+    
 
