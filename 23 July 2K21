@@ -429,7 +429,101 @@
                                                     var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
                                                     findMax(ar);
            29) Print the first 100 prime numbers
-           
+                                                       function isPrime(num) {
+                                                            for ( var i = 2; i < num; i++ ) {
+                                                                if ( num % i === 0 ) {
+                                                                    return false;
+                                                                }
+                                                            }
+                                                            return true;
+                                                        }
+
+                                                        function printPrimes(n) {
+                                                            var arr = [2];
+                                                            for ( var i = 3; i < n; i+=2 ) {
+                                                                if ( isPrime(i) ) {
+                                                                    arr.push(i);
+                                                                }
+                                                            }
+                                                            console.log(arr); 
+                                                        }
+
+                                                        printPrimes(100);
+            30) Create a function that will return in an array the first “nPrimes” prime numbers greater than a particular number “startAt”
+                                                        function getPrimes(nPrimes, startAt)
+                                                        {
+                                                            var ar = [];
+
+                                                            var i = startAt;
+
+                                                            while(ar.length < nPrimes)
+                                                            {
+                                                                if (isPrime(i))
+                                                                {
+                                                                    ar.push(i);
+                                                                }
+
+                                                                i++;
+                                                            }
+
+                                                            console.log(ar);
+                                                        }
+
+                                                        // Returns true if a number is prime
+                                                        function isPrime(n)
+                                                        {
+                                                            if (n < 2)
+                                                                return false;
+
+                                                            if (n == 2)
+                                                                return true;
+
+                                                            var maxDiv = Math.sqrt(n);
+
+                                                            for(var i = 2; i <= maxDiv; i++)
+                                                            {
+                                                                if (n % i == 0)
+                                                                {
+                                                                    return false;
+                                                                }
+                                                            }
+
+                                                            return true;
+                                                        }
+                                                        getPrimes(10, 100)
+            31) Reverse a String
+                                                        var s = reverseString("JavaScript");
+                                                        console.log(s);
+                                                        function reverseString(s)
+                                                        {
+                                                          var s1 = "";
+                                                          for(let i = s.length -1; i >= 0; i--){
+                                                              s1 += s[i]
+                                                          }
+                                                          return s1
+                                                        }
+            32) Merge two arrays
+                                                        var ar1 = [1, 2, 3];
+                                                        var ar2 = [4, 5, 6];
+                                                        var ar = mergeArrays(ar1, ar2);
+                                                        console.log(ar);
+                                                        function mergeArrays(ar1, ar2)
+                                                        {
+                                                         var result = [];
+                                                         result = [...ar1, ...ar2]
+                                                         return result;
+                                                        }
+            33) Calculate the sum of numbers received in a comma delimited string
+                                                          console.log(sumCSV(“1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9”));
+                                                          function sumCSV(s)
+                                                          {
+                                                           let n = s.split(","); let sum = 0;
+                                                           for(let i = 0; i < n.length; i++){
+                                                               sum += (+n[i]);
+                                                           }
+                                                           return sum;
+                                                          }
+
  Do the below programs in arrow functions
   Print odd numbers in an array
   Convert all the strings to title caps in a string array
