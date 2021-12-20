@@ -250,3 +250,12 @@ https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-
             }
             console.log(msg)
             Explanation: the output is Hi. Because, lemein is assigned as string and it is available while going through if else statement whereas lemeout is assigned as number and it is assignes to zero.
+      https://medium.com/@reach2arunprakash/www-guvi-io-zen-4fa483a7d359
+            1) var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+                  var new_string = [];
+
+                  for (var i = 0; i < 11; i++) {
+                   new_string[i] = numsArr[i] 
+                  }
+                  console.log(new_string.join(" "));
+
