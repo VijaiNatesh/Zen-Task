@@ -1,1 +1,75 @@
+1) class Movie {
+      constructor(title, studio, rating) {
+       this.title = title;
+       this.studio = studio;
+       this.rating = rating;
+      }
+      get pg(){
+      return this.calcPg();
+      }
+      calcPg(){
+       if(this.rating === "PG13"){
+           return this.title
+       }
+      }
+    }
+    const movieRating = new Movie("Casino Royale", "Eon Productions", "PG13")
+    console.log(movieRating.pg)
+2) class Circle{
+      constructor(radius, color){
+          this.radius = radius;
+          this.color = color;
+      }
+      get Radius(){
+          return this.calcRadius()
+      }
+      calcRadius(){
+          return this.radius
+      }
+      get Color(){
+          return this.calcColor()
+      }
+      calcColor(){
+          return this.color
+      }
+      get Area(){
+          return this.calcArea()
+      }
+      calcArea(){
+          return (3.14 * this.radius * this.radius);
+      }
+      get Circumference(){
+          return this.calcCircumference()
+      }
+      calcCircumference(){
+          return (2 * 3.14 * this.radius);
+      }
+  }
+  const circleSpecs = new Circle(10, "red")
+  console.log(circleSpecs.Circumference)
+3) function Person(FirstName, LastName, Age) {
+              this.firstName = FirstName || "unknown";
+              this.lastName = LastName || "unknown";
+              this.age = Age || 25;
+              this.getFullName = function () {
+                  return this.firstName + " " + this.lastName;
+              }
+      };
 
+      var person1 = new Person("James","Bond",50);
+      alert(person1.getFullName());
+
+      var person2 = new Person("Tom","Paul");
+      alert(person2.getFullName());
+4) class Uber{
+        constructor(pickup, destination, distance){
+            this.pickup = pickup;
+            this.destination = destination;
+            this.distance = distance;
+        }
+        get Price(){
+            return 5 * this.distance
+        }
+    }
+    const journey = new Uber("Salem", "Namakkal", 60)
+    console.log(journey.Price)
