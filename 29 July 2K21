@@ -1,1 +1,108 @@
-1) 
+1) <!DOCTYPE html>
+    <html>
+    <body>
+        <p id = "countries"></p>
+     <script > 
+     fetch("https://restcountries.com/v3.1/all")
+    .then(res => res.json())
+    .then(data => initialize(data.filter((item) => item.region === "Asia")))
+    .catch(err => console.log('Error:', err.message));
+    function initialize(data) {
+    const myArray = JSON.stringify(data);
+    document.getElementById("countries").innerHTML = myArray
+    }
+        </script>
+    </body>
+    </html>
+2) <!DOCTYPE html>
+    <html>
+    <body>
+        <p id = "countries"></p>
+     <script > 
+     fetch("https://restcountries.com/v3.1/all")
+    .then(res => res.json())
+    .then(data => initialize(data.filter((item) => item.population < 200000)))
+    .catch(err => console.log('Error:', err.message));
+    function initialize(data) {
+        console.log(data)
+    const myArray = JSON.stringify(data);
+    document.getElementById("countries").innerHTML = myArray
+    }
+        </script>
+    </body>
+    </html>
+3) <!DOCTYPE html>
+    <html>
+    <body>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Capital</th>
+                    <th>Flag</th>
+                </tr>
+            </thead>
+            <tbody id="countries">
+            </tbody>
+        </table>    
+        <script> 
+            fetch("https://restcountries.com/v3.1/all")
+                .then(res => res.json())
+                .then(data => initialize(data))
+                .catch(err => console.log('Error:', err.message));
+            function initialize(data) {
+                console.log(data)
+                if (data.length > 0) {
+                    var temp = "";
+                    data.forEach((itemData) => {
+                        temp += "<tr>";
+                        temp += "<td>" + itemData.name.common + "</td>";
+                        temp += "<td>" + itemData.capital + "</td>";
+                        temp += "<td>" + itemData.flag + "</td>";
+                    });
+                    document.getElementById('countries').innerHTML = temp;
+                }
+            }
+        </script>
+    </body>
+    </html>
+4) <!DOCTYPE html>
+      <html>
+      <body>
+          <h1 id = "population"></h1>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Population</th>               
+                  </tr>
+              </thead>
+              <tbody id="countries">
+              </tbody>
+          </table>    
+
+          <script> 
+              fetch("https://restcountries.com/v3.1/all")
+                  .then(res => res.json())
+                  .then(data => initialize(data))
+                  .catch(err => console.log('Error:', err.message));
+              function initialize(data) {
+                  console.log(data)
+                  if (data.length > 0) {
+                      var temp = ""; 
+                      data.forEach((itemData) => {
+                          temp += "<tr>";
+                          temp += "<td>" + itemData.name.common + "</td>";
+                          temp += "<td>" + itemData.population + "</td>";                                  
+                      });
+                      var sum = data.map((x) => x.population).reduce((a, b) => a + b , 0)
+                      console.log(sum)
+                      document.getElementById('population').innerHTML = `Total Population:${sum}`;
+                      document.getElementById('countries').innerHTML = temp;
+                  }
+              }
+          </script>
+      </body>
+
+      </html>
+ 5) 
