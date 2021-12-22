@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            border-style: solid;
+            border-width: medium;
+            text-align: center;
+        }
+
+        .form {
+            border-style: solid;
+            padding: 25px;
+            margin: 25px;
+            text-align: right;
+        }
+
+        .gallery {
+            text-align: left;
+            padding: 25px
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>
+            <b>Event 1</b>
+        </h1>
+        <br/>
+        <p>Number of available seats: 23</p>
+        <form class="form">
+            <div class="gallery">
+                <a target="_blank" href="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnR8ZW58MHx8MHx8&w=1000&q=80">
+                    <img src="img_lights.jpg" alt="Event Image" width="600" height="400">
+                </a>
+                <div class="desc">Image Description</div>
+            </div>
+            <label>Name:</label>
+            <input type="text">
+            <br/>
+            <label>Email:</label>
+            <input type="email">
+            <br/>
+            <label>Phone No.:</label>
+            <input type="number">
+            <br/>
+            <label>Number of seats:</label>
+            <input value="2">
+            <br/>
+            <label>Name of Attendee 2:</label>
+            <input type="text">
+            <br/>
+            <input type="submit">
+            <button>Cancel</button>
+        </form>
+
+    </div>
+
+    <script>   
+
+    </script>
+</body>
+
+</html>
