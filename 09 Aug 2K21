@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label>
+            <b>Name</b>
+        </label>
+        <br/>
+        <input type="text" id="first" name="first" required>
+        <input type="text" id="last" name="last" required>
+        <br/>
+        <label>
+            <b>Email</b>
+        </label>
+        <br/>
+        <input type="email" id="mail" name="mail" required>
+        <br/>
+        <label>
+            <b>Your Experience</b>
+        </label>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <br/>
+        <p>Overall, how would you rate your experience with us?</p>
+        <br/>
+        <p>
+            <b>How satisfied are you with</b>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Purchase</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Company Overall</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <b>How likely are you to</b>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Very Unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>Likely</th>
+                    <th>Very Likely</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Buy from us again</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Recommend our product to others</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Recommend our company to others</td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                    <td>
+                        <input type="radio">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <label>
+            <b>Additional comments or suggestions</b>
+        </label>
+        <br/>
+        <textarea rows="4" cols="50"></textarea>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+    <script>   
+        function validateForm() {
+            let x = document.forms["myForm"]["first"].value;
+            if(x){
+                alert(x)
+            }
+            let y = document.forms["myForm"]["last"].value;
+            if(y){
+                alert(y)
+            }
+            let mail = document.forms["myForm"]["mail"].value;
+            if(mail){
+                alert(mail)
+            }            
+        }
+    </script>
+</body>
+</html>
